@@ -1,0 +1,35 @@
+.App {
+  text-align: center;
+  background-color: rgb(241, 234, 234);
+  
+}
+
+#background {
+  background-image: url("https://previews.123rf.com/images/eyematrix/eyematrix1210/eyematrix121000010/15910762-black-and-white-repeating-torn-newspaper-background.jpg");
+  opacity: .5;
+}
+
+#top {
+  font-size: 20px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+  font-family: 'Ruslan Display', cursive;
+}
+
+.App-title {
+  font-size: 3em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+/* @keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+} */
