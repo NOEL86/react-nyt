@@ -20,7 +20,7 @@ const Form = props => (
                     <input className="form-control" type="text" placeholder="input"></input>
                 </div>
                 <br></br>
-                <button type="submit" className="btn btn-success">Search</button>
+                <button type="submit" className="btn btn-success" href="/">Search</button>
             </form>
 
         </div>

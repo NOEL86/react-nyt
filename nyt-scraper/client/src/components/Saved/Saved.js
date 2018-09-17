@@ -14,8 +14,12 @@ const Saved = props => (
                 <h5 className="card-title">Title: {props.title}</h5>
                 <p className="card-text">Date: {props.savedDate}</p>
             </div>
-            <h5>{props.notes}</h5>
-            <a href="#" className="btn btn-danger">Save</a>
+            <div className="row">
+                <h5 className="card-title">{props.notes}</h5>
+            </div>
+            <div className="row">
+                <a href="/delete/:id" className="btn btn-danger" onClick={remove}>Remove</a>
+            </div>
         </div>
     </div>
 

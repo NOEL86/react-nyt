@@ -2,21 +2,15 @@ import React, { Component } from 'react';
 import './App.css';
 import Form from "./components/Form";
 import Results from "./components/Results";
-import Results from "./components/Saved";
+import saved from "./components/Saved";
+import router from "./Routes";
 
 class App extends Component {
 
   state = {
     results,
-    saved
-
-  }
-
-  scrapeData = () => {
-
-  }
-
-  saveScraped = () => {
+    saved,
+    notes
 
   }
 
@@ -39,9 +33,18 @@ class App extends Component {
               title={results.title}
               date={results.date}
               url={results.url}
-              saveScraped={this.saveScraped} />
+              saveScraped={this.saveScraped}
+              makeANote={this.makeANote}
+            />
           })
           }
+
+          {/* <switch>
+            <Route exact path="/results" component={Results} />
+            <Route exact path="/saved" component={Saved} />
+            <Route exact path="/saved/notes" component={Saved} />
+            <Route component={NoMatch} />
+          </switch> */}
 
           {this.state.saved.map(saved => {
             return <Saved
@@ -50,7 +53,9 @@ class App extends Component {
               title={saved.title}
               date={saved.date}
               url={saved.url}
-              savedData={this.savedData} />
+              getNotes={this.getNotes}
+              remove={this.remove}
+            />
           })
           }
 
